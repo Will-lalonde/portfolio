@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="NewStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  </style>
+</head>
+
+<body style="background-color: #2c3e50">
+  <iframe id="myFrame" style="display:none" width="500" height="300"></iframe>
+  <button class="tablink" onclick="openPage('Contact', this, '#2c3e50')">
+    <div class=topheader>Contact</div>
+  </button>
+  <button class="tablink" onclick="openPage('Blog', this, '#2c3e50')">
+    <div class=topheader>Blog</div>
+  </button>
+  <button class="tablink" onclick="openTab(resume.pdf)">
+    <div class=topheader> <a href="https://will-lalonde.github.io/portfolio/resume.pdf" target="_blank">Resume</a> </div>
+  </button>
+  <button class="tablink" onclick="openPage('News', this, '#2c3e50')">
+    <div class=topheader>Projects</div>
+  </button>
+  <button class="tablink" onclick="openPage('Home', this, '#2c3e50')" id="defaultOpen">
+    <div class=topheader>Home</div>
+  </button>
+
+  <div id="Home" class="tabcontent">
+    <img src="yes.png" alt="me" class="meimg">
+    <div class="header">
+      <h3>A little about me </h3>
+    </div>
+    <div class="para">
+      <p>Let’s get acquainted! My name is William Lalonde, and I’ve always been interested
+        in 2 main things, wildlife and the behind-the-scenes of games. I would often
+        spend my time either learning about animals or learning ways to break my
+        favorite game for fun.<br><br>
+        Because of one of those key interests, I would often show
+        my friends the interesting ways I broke games ranging from Mario Sunshine to
+        Valhiem. This led to me testing games for friends, finding strange oversights that
+        allowed for all the wrong things, to help them find possible solutions in C++, C#.
+        Enrolling into a Game Programming course was the next logical step, so I did just
+        that at St.Laurence College. I’m already in my final year!
+
+        <br><br>Some may say that programming is extremely frustrating from time to time,
+        but that's not how I see it; the challenge is what I enjoy about it.
+        Finding the solution to a problem that’s had me stumped is comparable to
+        winning against a friend at his own game.
+        Upon graduation in May, I plan on joining the game industry as a QA junior or a programmer junior.
+      </p>
+    </div>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <div class="header">
+      <h3>Projects</h3>
+    </div>
+    <div class="slideshow-container">
+
+
+      <div class="mySlides fade">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="monkey.png" style="width:100%;height:100%; border-radius:50px">
+
+            </div>
+            <div class="flip-card-back">
+              <h1>MonkeyJoyRide</h1>
+              <p>
+                MonkeyJoyRide is a survival game, the longer you live and the more bananas you collect the greater your score will be.
+
+              </p>
+              <p>This game was made using c++ and sdl.</p>
+              <br>
+              <br>
+              <p>-Made the player controls</p>
+              <p>-Added the functionality of bananas</p>
+              <p>-Added the functionality of spears</p>
+              <p>-Added colision</p>
+              <br>
+              <br>
+              <br>
+              <p>The code can be found <a href="https://github.com/Will-lalonde">here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Frogger.png" style="width:100%;height:100%;border-radius:50px">
+
+            </div>
+            <div class="flip-card-back">
+              <h1>Definitely not frogger</h1>
+              <p>
+                This game is quite simple; the goal is to reach the end and fill each box. When all three of the boxes are filled you win.
+                The catch is that if you get in by a car or fall into the water you die.
+              </p>
+              <p>This game was made using c++ and sdl.</p>
+              <br>
+              <p>-Made the player controls</p>
+              <p>-Made the sprite</p>
+              <p>-Added colision</p>
+              <p>-Added functionality to the cars</p>
+              <p>-Added functionality to the logs</p>
+              <p>-Added functionality to the boxes</p>
+
+              <p>The code can be found <a href="https://github.com/Will-lalonde">here</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Pit.png" style="width:100%;height:100%;border-radius:50px">
+            </div>
+            <div class="flip-card-back">
+              <h1>Into the Pit</h1>
+              <p>The point of this game is to reach the bottom of the cave without dying.
+                On the way down you must watch out for mobs and spikes that will end your adventure. At the bottom you will find an important treasure</p>
+              <p>The game was made within unity</p>
+              <br><br>
+              <p> For this game I was the QA</p>
+              <p>-Found a bug where you could clip into the wall and leave the map</p>
+              <p>-Found a bug where if you hit the mobs at the right angle it spawns the corpses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <div class="header">
+      <h3>Contact Me</h3>
+    </div>
+    <div class="para">
+      <p> Feel free to contact me at <br>sir-will03@outlook.com.</p>
+    </div>
+  </div>
+
+  <div id="Blog" class="tabcontent">
+    <div class="header">
+      <h3 style="text-align: center;">Pick a project</h3>
+      <div class="table">
+        <table>
+          <tr>
+            <td>
+              <input type="image" src="main_menu.png" width="400" onclick="openPage('Capstone', this, '#2c3e50')" style="position: center;" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="Capstone" class="tabcontent">
+    <div class="header">
+      <h3>Capstone Blog</h3>
+    </div>
+
+    <table class="blogTable" style="width:50%">
+      <tr>
+        <th>
+          <h2>Select the week here</h2>
+        </th>
+      </tr>
+      <tr>
+        <td style=" text-align: center; vertical-align: middle;">
+          <div>
+            <p> <a href="#Week1-2"><u>Week 1-2,</u> </a>
+              <a href="#Week3"><u>Week 3,</u> </a>
+              <a href="#Week4"><u>Week 4,</u> </a>
+              <a href="#Week5"><u>Week 5,</u> </a>
+              <a href="#Week6"><u>Week 6,</u> </a>
+              <a href="#Week7"><u>Week 7,</u> </a>
+              <a href="#Week8"><u>Week 8,</u> </a>
+
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <img class="blogImgRight" src="Flow.png" alt="" style="top:580px; max-height: 360px">
+    <img class="blogImgLeft" src="WebHook.png" alt="" style="top:650px; height: 180px;">
+    <div class="para">
+      <h4 id="Week1-2">Week 1-2</h4>
+    </div>
+    <div class="para">
+      <p>
+        <br><br>
+        Week 2 of the capstone project was mostly set up for the project still. The project being a 2d platformer with fast paced movement, that promotes the player to go faster and faster. The gameplay of the game will be a mashup of Cup head and
+        Ori and the blind forest. Now that we (the group) now know what kind of game to make, let’s talk about our process.<br><br>
+
+        Monday<br>
+        We started that class by touching up the GDD (Game Design Documents) by listing to the professors’ inputs that he previously left on it. A good portion of those comments provided told us to clarify details. Working on the GDD ended reassuring
+        me since Pamela, Hyangsu and Kaleb started giving their input. During the previous week getting a response from Pamela, Hyangsu or Kaleb was rare occurrence, making the class boring.<br><br>
+
+        Thursday<br>
+        This class the group worked on their respective TDD (Technical design document). These document are made to create a easier work flow during the creating of the game. In a TDD there is normally 5 parts, a quick description of what your
+        making, technical challenges that your going to encounter, UML diagram which breaks down the necessary class with their properties, Flow chart which helps developers have a understanding of how the thing works and a task list which breaks
+        down the necessary tasks needed to make the thing.
+
+
+        While the group was working on the TDD, I was making the Jira webhook.
+        The purpose of this webhook was to notify the group in discord every time the Kanban board was updated. This seemed easy like a project that shouldn’t take a lot of time to make, and it is if you’re the admin of the Kanban board. If you
+        couldn’t guess, I wasn’t, this made a quick 20 minute learning process into an 1 hour process. Normally to make a webhook all you needed to do was, make a webhook bot in discord under the webhook tab and copy its URL. Then slap that URL into
+        https://skyhook.glitch.me/ and modify it to suit your need. Then finally go to your Jira under the webhook tab and paste the URL in the URL tab with the capability you want enabled.<br><br>
+
+        Without Administration you can’t get into the discord or Jira webhook tabs. This took longer than I like to admit figure out, but in the end it works.<br><br>
+      </p>
+    </div>
+    <img class="blogImgRight" src="GitBranch.png" alt="" style="top:1382px; left:8%; max-height: 360px">
+    <img class="blogImgLeft" src="gitWebhook.png" alt="" style="top:1472px; height: 130px; right:120px;">
+    <div class="para" style="top:1180px;">
+      <h4 id="Week3">Week 3</h4>
+    </div>
+    <div class="para" style="top:1230px;">
+      <p> Week 3 was a revision week; everyone was finishing up their respective TDD. Hyangsu was finishing up the saving system TDD, Kaleb was finishing up the UI TDD, Nolan was finishing up the combat TDD , Pamela was finishing up the audio TDD,
+        and I was finishing up the AI/Mobs TDD. <br><br>
+
+        Monday<br>
+        For Monday’s work period, I finished my TDD, and ended up trouble shooting the GitHub Webhook with Nolan. The issue at hand was the fact that he could download from the git repository but could not upload anything to it. Turns out the issue
+        was that git defaulted the branch to master when you download from it for the first time. The reason why that’s an issue, is because we don’t have a master branch in our repository. So, when Nolan tries to upload to the repository it would
+        look for a non-existing branch. The fix for it was simple, just run the “git checkout main”, this would change the branch of the local repository to master (an existing branch).<br><br>
+
+        Thursday<br>
+        Thursday quick day, it was a snowstorm, so the group wanted to get the work done and get home before the roads get worse than it already was. We couldn’t work from home since the files that we needed (the TDD) was on the school’s computers…
+        Either way Thursday, the group went around reviewing everyone’s TDD. At the end of the review, I don’t think anyone had to critiqued anything. I’m not sure if its because none of us felt comfortable to critiquing each other’s work or because
+        everyone’s TDD was superb. Must be the latter, since the groups TDD’s did indeed look good.<br><br>
+
+        With the TDD’s essentially finished, next week is when we start working on the game. Week 4 is going to be the group’s first sprint. Sprint being a time-boxed period where the team completes a set amount of work. I look forward to this, since
+        now we will finally be able to start making the game.<br><br>
+
+
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    //Slide show
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    function openTab(th) {
+      window.open(th.name, '_blank');
+    }
+  </script>
+
+</body>
+
+</html>

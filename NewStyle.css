@@ -1,0 +1,254 @@
+.para{
+  position: absolute;
+  font-family: inherit;
+  font-size: 120%;
+  color: #f3f7f8;
+  top: 40%;
+  right:26.5%;
+  width: 45%;
+  align:center;
+  text-align: center;
+}
+.blogPara{
+    position: absolute;
+    font-family: inherit;
+    font-size: 120%;
+    color: #f3f7f8;
+    top: 40%;
+    right:40%;
+    width: 45%;
+    align:center;
+    text-align: center;
+}
+.blogImgRight{
+  position: absolute;
+  top: 40%;
+  left:220px;
+  width: auto;
+  max-height: 50%;
+}
+.blogImgLeft{
+  position: absolute;
+  top:40%;;
+  right:60px;
+  height: 180px;
+  width: auto;
+}
+.logo{
+  position: absolute;
+
+  top:1%;
+  left:3.5%;
+  width: 10%;
+}
+a {
+    color: #f3f7f8;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#f3f7f8;
+    text-decoration:none;
+    cursor:pointer;
+}
+.topheader{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 20px #009688;
+}
+.header{
+  position: absolute;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  top:25%;
+  color: #fff;
+  text-shadow: 0 0 20px #009688;
+}
+
+.table{
+  position: absolute;
+
+  top:90%;
+  left:38.8%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+.blogTable{
+  top:5%;
+  position: absolute;
+  right: 24.5%;
+  width: 15%;
+}
+.meimg{
+  top:25%;
+  position: absolute;
+  object-fit: contain;
+  width: 15%;
+  border-style: solid;
+  border: 5px solid;
+  border-color: #21c2f8;
+  border-radius: 50px;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-style: solid;
+  border: 5px solid;
+  border-color: #21c2f8;
+  border-radius: 50px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius:50px
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2c3e50;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 40%;
+  margin: auto;
+  border-radius:50px
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Set height of body and the document to 100% */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #202020;
+  color: white;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {
+  background-color: #2c3e50;
+}
+
+#News {
+  background-color: #2c3e50;
+}
+
+#Contact {
+  background-color: #2c3e50;
+}
+
+#About {
+  background-color: #2c3e50;
+}
