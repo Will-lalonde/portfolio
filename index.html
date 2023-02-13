@@ -293,6 +293,37 @@
 
       </p>
     </div>
+    <img class="blogImgRight" src="protoLevel.png" alt="" style="top:3274px; left:13%; max-height: 180px">
+    <img class="blogImgLeft" src="strangecode.png" alt="" style="top:3202px; height: 120px; right:60px;">
+    <div class="para" style="top:2730px;">
+      <h4 id="Week5">Week 5</h4>
+    </div>
+    <div class="para" style="top:2782px;">
+      <p>
+        At the end of this week, we created a working prototype. Everyone ended up finishing what they were assigned with little to no problems. The prototype allows the player to run, jump, parry and kill mobs and it even has a boss in place.
+        <br><br>
+
+        Monday<br>
+        Monday was mostly just me trouble shooting how to get the mobs to “think” and I do mean more than to track down the player. For example, one of the mobs I ended up making will track the player down and starting shooting bullets at the player.
+        This mob however will stay at a safe range from the player, if the player is too far away, it will run towards them, if the distance is just right, it will shoot, and if the player is too close, it will run away.<br><br>
+
+        While working on the mobs, I originally thought that ground mobs were going to be easier to work on compared to air mobs… This so far was the biggest misunderstanding I’ve encountered thus far. Since for ground mobs there are multiple checks
+        that have to be done to insure that they stay on the ground.<br><br>
+
+        Wednesday/ Thursday<br>
+        These work periods were mostly trouble shooting and tweaking things with Nolan. The first issue was the parry mechanic wasn’t working the way the programmed suggested. The player could parry off of bullets, but it would never turn off the
+        canParry bool after parrying off of it. Since canParry gets disabled OnTriggerExit but the bullet would get destroyed when the player touched it, this would never activate OnTriggerExit. The work around we found was to teleport the bullet
+        just before it got destroyed. I’m not really happy about this fix but it doesn’t really matter since for the prototype we removed the parry-able bullets. Another fix was the BasicGround Mob, it was originally using a Ray to detect if it was
+        grounded but turns out the ray I used was bugged, so as a replacement I “borrowed” Nolan’s ground check for the player.<br><br>
+
+        Friday<br>
+        Friday was a more relaxed day since all I did was make a prototype level for the prototype that included the mobs. <br><br>
+
+
+
+
+      </p>
+    </div>
   </div>
   </div>
   </div>
