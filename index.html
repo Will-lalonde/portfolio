@@ -324,6 +324,43 @@
 
       </p>
     </div>
+    <div class="para" style="top:3500px;">
+      <h4 id="Week6">Week 6</h4>
+    </div>
+    <div class="para" style="top:3532px;">
+      <p>
+        SICK
+      </p>
+    </div>
+
+    <img class="blogImgLeft" src="jump.png" alt="" style="top:3882px; height: 180px; right:240px;">
+    <img class="blogImgRight" src="mobDestroy.gif" alt="" style="top:4044px; left:13%; max-height: 180px">
+    <img class="blogImgLeft" src="fade.gif" alt="" style="top:4174px; right:8%; max-height: 180px">
+    <div class="para" style="top:3600px;">
+      <h4 id="Week7">Week 7</h4>
+    </div>
+    <div class="para" style="top:3632px;">
+      <p>
+        Since the protype is finished, that means that the main concept of the game is also done. With that being the case, the majority of the work now, are touchups, such as how the gameplay feels, how the levels feel and visuals. Just saying
+        visuals is kind of downplaying how much work that really is, visuals really mean things like animation, mob art, player art, particles, art of the levels, background art, decorations, etc... There are a lot of things that still need to be
+        made. That’s why this week I started playing with particles.<br><br>
+
+        The first particle I made when working on particles was player running particles. So, I made a unity particles component and was lost. There was a lot more options and sliders then I was expecting. Instead of playing with it for a while and
+        trying to brute force what I wanted, I search up a tutorial by Brackeys to gain a understanding of the system.
+        <br><br>
+        With a better understanding, I was able to create a “dust” particles that emitted from player when he ran. Even thought it did what I wanted I felt that maybe less was better, so I decided to change when the particles was played. Instead of
+        the dust being played when the player ran I made it so that it played when jumped and turned direction on the ground. The main things that makes the particles work is that the dust simulation space was the world and not local, allowing it to
+        float where it spawned.
+        <br><br>
+        The next particles I played with the mob death particles, here I wanted something little strange. I made it so that when the mob would die it would spawn a puff of particles that the player would push aside when flying threw the mob. The only
+        issue with all of this, was the fact that I mimicked the way I did the player particles. So the particles was child of mob, so when the mob would get destroyed the particles would also disappear. The fix was to create a prefab of the
+        particles, spawn it in when the mob dies and destroy it after the particle’s lifetime is over.
+        <br><br>
+        The most complicated effect I made this week was the “fade” effect. When the player would have a combo of 3 or higher, there would be a trail of after images of the player that appears. This isn’t even using the particles system. When the
+        player reaches a combo of 3 it spawns in a prefabs of the player model that has a animation attached to it, that animation being a fade away. After the fade is done it destroys itself. Leaving behind a neat little effect.
+
+      </p>
+    </div>
   </div>
   </div>
   </div>
