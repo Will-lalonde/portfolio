@@ -201,6 +201,7 @@
               <a href="#Week6"><u>Week 6,</u> </a>
               <a href="#Week7"><u>Week 7,</u> </a>
               <a href="#Week8"><u>Week 8,</u> </a>
+              <a href="#Week9"><u>Week 9,</u> </a>
 
             </p>
           </div>
@@ -319,9 +320,6 @@
         Friday<br>
         Friday was a more relaxed day since all I did was make a prototype level for the prototype that included the mobs. <br><br>
 
-
-
-
       </p>
     </div>
     <div class="para" style="top:3500px;">
@@ -390,6 +388,41 @@
         Over the weekend I ended up finished up the first prototype of the first level. The prototype got 3 new mobs, a turret, the small penguin and big penguin. The turret would stand still and just shoot at the player, small was slow and jump high
         while the big couldn’t jump but slid fast.<br><br>
 
+      </p>
+    </div>
+
+    <img class="blogImgRight" src="Jenkins.png" alt="" style="top:5755px; left:17%; max-height: 240px">
+    <img class="blogImgLeft" src="BossLevelOne.png" alt="" style="top:6205px; height: 240px; right:530px;">
+    <div class="para" style="top:5450px;">
+      <h4 id="Week9">Week 9</h4>
+    </div>
+    <div class="para" style="top:5502px;">
+      <p>
+        With this being the last week of this sprint our group had to have something to hand in, that being the one functional level. The group decided that we should hand in 1 level pair, since the levels within the game follow the same repeating
+        pattern, 1 normal level and 1 boss level. The goal of this week for me was to hand in that boss level.<br><br>
+
+        Monday<br><br>
+        Picking up where we left off on last Thursday, me and Nolan got assistances from the professor with Jenkins. Turns out that where Jenkins asks for credentials to accesses the GitHub repository it does want your email but not your password in
+        the password section. Instead you needed to create a token for the repository and insert that inside the password section.<br><br>
+        The next step was getting Jenkins to build and test the game. The main point of getting Jenkins was to be able to automatically test each build of the game, notifying the group if it failed at any point. This was the easiest part of Jenkins
+        due to the fact, the needed code was publicly available. The only 2 hiccup with this part of Jenkins, was when I forgot to put the Build Script inside of a editor file and when I didn’t comment out all of what I needed to.<br><br>
+        With all that done, we headed for the night only to realise Jenkins was testing the build every 5 minutes and notify the discord server (via webhook). This was fixed the following day.<br><br>
+
+        Wednesday<br><br>
+        Wednesday was a more relaxed for me, spent a chunk of my time designing the boss level. While designing the level I decided that it needed something more than just platforms to jump on, it needed icicles. Since before even designing the boss
+        level, I was sure that I wanted a more platforming focused level. Platformers without obstacles aren’t very challenging, that’s why I needed icicles.
+        Spent the other chuck of my time implementing those icicles. They fell when the player was underneath, if the player collided with point, it would damage the player. The player could jump of the top of them and they had water drops coming of
+        the end of them to notify the player that there were icicles above.<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        Thursday<br><br>
+        Thursday was a mixture of little touch-ups and helped Nolan with troubleshooting bugs. The main touch ups that I worked on added barriers that Nolan created to the levels so that the player couldn’t get out of the map or fall forever. In
+        addition to those barriers, I had to make another that would destroy and entity that wasn’t the player (mobs and Icicles), so that they didn’t fall forever.<br><br>
+
+        Weekend<br><br>
+        The weekend was a stressful one since a unforeseen issue had appeared. There was a merge conflict with the level1 scene. Not sure how or why it happened but fixed the merge conflict with Nolan’s guidance, had to do some git commands and open
+        up the scene within visual studio. In the end, I was able to merge the levels to main but certain defects had appeared like UI bugs, Boss Room snow getting disabled and Checkpoint prefab breaking.
+
+        <br><br>This was later fixed by Nolan.<br><br>
 
 
 
