@@ -202,6 +202,7 @@
               <a href="#Week7"><u>Week 7,</u> </a>
               <a href="#Week8"><u>Week 8,</u> </a>
               <a href="#Week9"><u>Week 9,</u> </a>
+              <a href="#Week10"><u>Week 10,</u> </a>
 
             </p>
           </div>
@@ -423,6 +424,47 @@
         up the scene within visual studio. In the end, I was able to merge the levels to main but certain defects had appeared like UI bugs, Boss Room snow getting disabled and Checkpoint prefab breaking.
 
         <br><br>This was later fixed by Nolan.<br><br>
+
+
+
+
+      </p>
+    </div>
+
+    <img class="blogImgRight" src="Mobs2.png" alt="" style="top:8000px; left:31%; max-height: 240px">
+    <img class="blogImgLeft" src="week10plans.png" alt="" style="top:6900px; height: 240px; right: 70px;">
+    <div class="para" style="top:6850px;">
+      <h4 id="Week10">Week 10</h4>
+    </div>
+    <div class="para" style="top:6902px;">
+      <p>
+        With the boss level finished and the sprint done, that means we get to start a whole new sprint now. The goal of this sprint is to make level 2 and boss level 2, themed around western. Since the theme changed, the enemies now need to change
+        as well.<br><br>
+
+        Monday<br><br>
+        Monday was filled with a lot of brainstorming with the group, making sure everyone was able to put their input into the levels, as well as to make sure everyone understood what was going on for this sprint.<br><br>
+        The mobs that we decided on was a crow, a scorpion, UFO and a tumbleweed.<br><br>
+        Crow is only going to damage the player with the money bag it holds and can only get hurt if the player hits the crow itself.<br><br>
+        The scorpion will shoot at the player and run away if the player gets to close.<br><br>
+        UFO will follow above the player once the player enters its territory and will shoot the player.<br><br>
+        The tumbleweed will move towards the player and randomly bounce.<br><br>
+
+        Thursday/Wednesday/ Thursday<br><br>
+        Started working on the crow since I thought it was going to be the easiest, all I would need todo was use the base AI from the air mob and just move the hurt box. The catch with the crow was to make it so that the player could only kill the
+        crow if they hit the crow while avoiding the damaging money bad covering the lower side of the crow. If the crow died, it would drop the money bag.<br><br>
+
+        Dropping the money caused issues. I couldn’t spawn the bag on the crow if the crowed died, so I had save its last position in other script attached to the crows parent object. Once the crow died it would spawn it at its last position.<br><br>
+
+        The first test of the crow worked with only 1 flaw. The bag was getting spawned at 1000 1000. This happens because the mob must get teleported away from the player before getting destroyed or else the on trigger exit could never be porc’ed
+        causing issues. The fix to this issue was easy but strange on, I just checked to see if the position that’s about to override the old safe location isn’t 1000 1000.<br><br>
+
+        <br><br> (After the merge on 3/27/2023 the crow broke)
+
+        Weekend<br><br>
+        Making the other three mobs combine was a lot easier than the crow. The scorpion was just the Ground Ranger I made for the prototype. The UFO hardest part was making the territory, the territory was a collider/trigger the on enter/exit swaped
+        the UFO target to either the player or the UFO spawn location. The tumbleweed was a fun mob to make, since I had to play with forces, that means if / when I did misstype the values a tumbleweed would either jump into the sky or just tackle
+        the player at mach 2.<br><br>
+
 
 
 
