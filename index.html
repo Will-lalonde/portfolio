@@ -203,6 +203,7 @@
               <a href="#Week8"><u>Week 8,</u> </a>
               <a href="#Week9"><u>Week 9,</u> </a>
               <a href="#Week10"><u>Week 10,</u> </a>
+              <a href="#Week11"><u>Week 11,</u> </a>
 
             </p>
           </div>
@@ -471,6 +472,42 @@
 
       </p>
     </div>
+
+    <img class="blogImgRight" src="BossShake.gif" alt="" style="top:8660px; left:8%; max-height: 240px">
+    <img class="blogImgLeft" src="crow.gif" alt="" style="top:8400px; height: 120px; right:100px;">
+    <div class="para" style="top:8150px;">
+      <h4 id="Week11">Week 11</h4>
+    </div>
+    <div class="para" style="top:8200px;">
+      <p>
+        The plan for week 11 was simply to do touch-ups, touch up the boss 1 feel and fix certain bugs like the player collision with mobs and the crow.<br><br>
+
+        Monday<br><br>
+        Monday was all about fixing the crow. I was originally confused since the crow worked fine on my branch but after the merge it completely broke. The crow would no longer spawn a money bag on death, but instead would spam errors in the
+        console. The original code would break as soon as the child object (the crow) would get destroyed, in the code I would check if the child object would become null. Apparently a destroyed doesn’t count as being null… Not sure why this was
+        originally working before the merge.<br><br>
+
+        After trying different fixes and getting nowhere, I ended up talking to Nolan about this endeavour and he simply asked me how do I spawn my death particles. These death particles spawn after the crow dies/ gets destroyed. After I explained
+        how these particles would spawn, he suggested that I should just turn it into an array. An array that held what ever I needed to spawn after the mob gets destroyed. The crow finally started to work again.<br><br>
+
+        Tuesday<br><br>
+        Tuesday was a more relaxed day for me since I no longer need to worry about the crow, instead I had to apply touch ups to the boss 1. The first thing I added was a snow effect for when the boss slams into the ground for his second phases.
+        After adding the snow I increased the speed of the boss when he slams into the ground but something was still missing. I needed camera shakes. Since there was already camera shake code thanks to Hyangsu, all I had to figure how out to use it.
+        The bosses now feel a little more intimidating.<br><br>
+
+        Thursday<br><br>
+        The final thing I needed to do for this spring was to fix the player collision bug. The bug was that if during the player invincibility frames decided to stand on a mob, at the end of those frames, the player wouldn’t take damage from the mob
+        and wouldn’t be able to jump off the mob. To fix the issue, I would need disable player collider so that the player wouldn’t be able to touch the mobs. Without the collider the player would also stop colliding with the ground, so I had to add
+        a child with a collider to prevent the player from falling out of the map. The collider on the child was set to not to collider with mobs ever.
+
+
+
+
+
+
+      </p>
+    </div>
+
 
   </div>
   </div>
