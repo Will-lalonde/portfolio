@@ -204,6 +204,7 @@
               <a href="#Week9"><u>Week 9,</u> </a>
               <a href="#Week10"><u>Week 10,</u> </a>
               <a href="#Week11"><u>Week 11,</u> </a>
+              <a href="#Week12"><u>Week 12,</u> </a>
 
             </p>
           </div>
@@ -505,6 +506,30 @@
 
 
 
+      </p>
+    </div>
+
+    <img class="blogImgRight" src="Sound.png" alt="" style="top:9400px; left:8%; max-height: 240px">
+    <img class="blogImgLeft" src="Simple.png" alt="" style="top:9620px; height: 80px; right:100px;">
+    <div class="para" style="top:9050px;">
+      <h4 id="Week12">Week 12</h4>
+    </div>
+    <div class="para" style="top:9100px;">
+      <p>
+        The plan for this week was to start adding audio to the game, such as mobs and boss noises and anything else that I found could use it.<br><br>
+        Monday<br><br>
+        Monday was a research day. The two goals for Monday was to firstly understand how the audio system that Kaleb implemented works and secondly find a way to source usable and free audio. Monday wasn’t a very successful day for the second task.
+        Turns out finding free and usable audio is a lot harder than anticipated, since anything that seemed usable had “AudioJungle” in it to force people to pay for the real version of the audio.<br><br>
+
+        Tuesday<br><br>
+        After a more research, I managed to find a work around for the audio problem. That solution was a site called SoundSnap. This site allowed me to find usable and free audio for the project. The only thing the site asked the users to do, if
+        their audio was used, was to credit the site in someway for example a comment in the code. The rest of the work period was used finding and implementing the specific sounds needed for the game thus far.<br><br>
+
+        Thursday<br><br>
+        Getting the audio to play was easier than expected for the boss, but a lot harder than expected for the mobs. Each unique audio needs its own audio source due to how the audio manger works within the game. With that in mind, I desperately
+        wanted a way to prevent a new audio source for each unique mob, since that would clutter the audio manager extremely fast. That being the case, turns out you can swap the audio clip of a existing audio source during run time. Instead of
+        having a 1 to 1 ration of mobs to death noise, its now 1 to all with some pretty simple code.
+        The hardest part for mobs audio to works was changed the scriptable object of the mobs to allow a audio source to be put inside.<br><br>
       </p>
     </div>
 
